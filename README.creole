@@ -4,7 +4,7 @@ I'm gonna create the best Hello World application using all the best practices I
 
 == To do
 
-* Write simple Hello World application in Java
+* --Write simple Hello World application in Java--
 * Add unit tests with JUnit
 * Add building system. Which one is the common in Java world?
 * Add testing coverage measure
