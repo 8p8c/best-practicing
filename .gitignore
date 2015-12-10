@@ -1,0 +1,7 @@
+# gitignore
+
+# Ignore Emacs temporary files
+*~
+
+# Ignore Java class files
+*.class
