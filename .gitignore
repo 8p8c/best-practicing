@@ -5,3 +5,7 @@
 
 # Ignore Java class files
 *.class
+
+# Ignore .gradle and build directories
+.gradle
+build
