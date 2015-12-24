@@ -1,9 +1,7 @@
 //apply plugin:'java'
 
-task world {
-     dependsOn 'hello'
-}
-world << { println 'world' }
+//shorted init, config and exec
+task world(dependsOn: 'hello') << { println 'world' }
 
 task hello
 
