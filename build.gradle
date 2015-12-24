@@ -1,7 +1,10 @@
 //apply plugin:'java'
 
 //shorted init, config and exec
-task world(dependsOn: 'hello') << { println 'world' }
+task world(dependsOn: ['hello']) << { println 'world' }
+world {
+    description= 'Simple example of how you can describe task.'
+}
 
 task hello
 
