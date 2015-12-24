@@ -1,1 +1,18 @@
-apply plugin:'java'
+//apply plugin:'java'
+
+task world {
+     dependsOn 'hello'
+}
+world << { println 'world' }
+
+task hello
+
+hello << {
+     print 'hello, '
+}
+
+//initialization, configuration, execution
+task initializeDatabase
+initializeDatabase { println 'configuring database connection' }
+initializeDatabase << { println 'connect to database' }
+initializeDatabase << { println 'update database schema' }
