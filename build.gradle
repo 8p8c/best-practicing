@@ -1,19 +1,19 @@
-//apply plugin:'java'
+apply plugin:'java'
 
 //shorted init, config and exec
-task world(dependsOn: ['hello']) << { println 'world' }
-world {
-    description= 'Simple example of how you can describe task.'
-}
+//task world(dependsOn: ['hello']) << { println 'world' }
+//world {
+//    description= 'Simple example of how you can describe task.'
+//}
 
-task hello
+//task hello
 
-hello << {
-     print 'hello, '
-}
+//hello << {
+//    print 'hello, '
+//}
 
 //initialization, configuration, execution
-task initializeDatabase
-initializeDatabase { println 'configuring database connection' }
-initializeDatabase << { println 'connect to database' }
-initializeDatabase << { println 'update database schema' }
+//task initializeDatabase
+//initializeDatabase { println 'configuring database connection' }
+//initializeDatabase << { println 'connect to database' }
+//initializeDatabase << { println 'update database schema' }

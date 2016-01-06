@@ -1,4 +1,4 @@
-package org.gradle.example.simple;
+package org.bestpracticing;
 
 class HelloWorld {
 	public static void main(String[] args) {
