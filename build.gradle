@@ -1,5 +1,26 @@
 apply plugin:'java'
 
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Use system testNG. apt-get install testng
+  compile files('/usr/share/java/testng.jar')
+}
+
+sourceSets {
+  main {
+    runtimeClasspath = files(output.resourcesDir) + runtimeClasspath
+  }
+  test {
+    runtimeClasspath = files(output.resourcesDir) + runtimeClasspath
+  }
+}
+test {
+  useTestNG()
+}
+
 //shorted init, config and exec
 //task world(dependsOn: ['hello']) << { println 'world' }
 //world {
