@@ -1,3 +1,5 @@
+project is frozen.
+
 = best-practicing
 
 I'm gonna create the best Hello World application using all the best practices I could find and adapt. And since I'm learning Java I'm going to do this in Java.
